@@ -3,7 +3,7 @@ var Sequelize = require('sequelize');
 var db = require('./_db');
 
 
-var Todo = sequelize.define('Todo', {
+var Todo = db.define('Todo', {
   task: Sequelize.STRING,
   completed: Sequelize.BOOLEAN,
   completedOn: Sequelize.DATE

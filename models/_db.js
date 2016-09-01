@@ -1,9 +1,9 @@
 // _db.js
 
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('postgres://localhost:5432/sequelizedemo');
+var db = new Sequelize('postgres://localhost:5432/sequelizedemo');
 
-sequelize
+db
   .authenticate()
   .then(function(err) {
     console.log('Connection has been established successfully.');
@@ -11,3 +11,5 @@ sequelize
   .catch(function (err) {
     console.log('Unable to connect to the database:', err);
   });
+
+module.exports = db
