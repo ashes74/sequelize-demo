@@ -1,0 +1,17 @@
+{
+  "name": "sequelize-demo",
+  "version": "1.0.0",
+  "description": "A quick demo on getting your sequelize up and running ",
+  "main": "app.js",
+  "dependencies": {
+    "pg": "^6.1.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.24.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "L. Ashwood",
+  "license": "MIT"
+}
