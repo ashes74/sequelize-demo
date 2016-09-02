@@ -6,7 +6,7 @@ var db = require('./_db');
 
 var Todo = db.define('todo', {
   task: Sequelize.STRING,
-  completedOn: {
+  completed: {
     type: Sequelize.DATE,
     allowNull: true
   }
