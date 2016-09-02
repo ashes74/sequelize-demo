@@ -1,3 +1,4 @@
+'use strict';
 var Todo = require('./todo');
 var db = require('./_db');
 
