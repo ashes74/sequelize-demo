@@ -26,9 +26,13 @@ db.sync({force:true})
 .then(function(){
   console.log('-done clearing-');
   console.log('-seeding tasks-');
-  return tasks.forEach(function(task){
-    Todo.create(task)
-  })
+  return Promise.all(tasks.map(function(task){
+    return Todo.create(task)
+  }))
+  // return Promise.all(tasks)
 }).then(function(){
-  
+  Todo.findAll()
+  .then(function (todos) {
+    console.log(todos);
+  })
 })
